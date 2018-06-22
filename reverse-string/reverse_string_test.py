@@ -3,9 +3,9 @@ import unittest
 from reverse_string import reverse
 
 
-# Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
+# Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.1
 
-class ReverseStringTest(unittest.TestCase):
+class ReverseStringTests(unittest.TestCase):
     def test_empty_string(self):
             self.assertEqual(reverse(''), '')
 
