@@ -40,7 +40,7 @@ class PangramTest(unittest.TestCase):
 
     def test_missing_letters_replaced_by_numbers(self):
         self.assertIs(
-            is_pangram('7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog'),2
+            is_pangram('7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog'),
             False)
 
     def test_pangram_with_mixedcase_and_punctuation(self):

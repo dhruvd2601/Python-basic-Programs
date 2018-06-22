@@ -1,18 +1,4 @@
 def is_pangram(sentence):
-    List = []
-
-    for i in range(26):
-        List.append(False)
-
-
-    for c in sentence.lower():
-        print(c)
-        if not c == " ":
-            List[ord(c) - ord('a')] = True
-        elif c.isdigit() :
-            List[c+ord('a')] = True
-
-    for ch in List:
-        if ch == False:
-            return False
-    return True
+    alphabet = set(chr(i) for i in range(ord('a'), ord('z') + 1))
+    letters = set(sorted(sentence.lower()))
+    return len(alphabet) == len(alphabet & letters)
